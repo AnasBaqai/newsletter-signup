@@ -29,11 +29,11 @@ app.post("/",function(req,res){
         ]
     };
     const jsonData=JSON.stringify(data);
-     const url = "https://us8.api.mailchimp.com/3.0/lists/yourListKey"
+     const url = "https://us8.api.mailchimp.com/3.0/lists/b409649408"
 
      const option={
         method:"POST",
-        auth:"AnasBaqai:yourApiKey",
+        auth:"AnasBaqai:a98df75dacdc4fbb0cd4b69537a61789-us8",
      }
     const request= https.request(url,option,function(response){
         // response.on("data",function(data){
@@ -59,3 +59,10 @@ app.post("/failure",function(re,res){
 app.listen(process.env.PORT || 3000,function(req,res){
     console.log("server is running at port 3000.");
 })
+
+// mailchimp api key
+// a98df75dacdc4fbb0cd4b69537a61789-us8
+
+
+// audience Id 
+// b409649408
